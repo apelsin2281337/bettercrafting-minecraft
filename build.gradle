@@ -19,7 +19,6 @@ loom {
             sourceSet sourceSets.client
         }
     }
-
 }
 
 fabricApi {
@@ -51,10 +50,9 @@ dependencies {
 
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    //no configuration for now bruh
+    //not yet configurable bruh
     //implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
     //implementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-
 
 }
 
