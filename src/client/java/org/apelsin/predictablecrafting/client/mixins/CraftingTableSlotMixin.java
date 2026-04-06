@@ -7,7 +7,7 @@ import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.inventory.ResultSlot;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import org.apelsin.predictablecrafting.config.ModConfig;
+//import org.apelsin.predictablecrafting.config.ModConfig;
 import org.apelsin.predictablecrafting.mixins.CraftingResultSlotAccessor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -21,8 +21,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Slot.class)
 public class CraftingTableSlotMixin {
 
-    @Unique
-    private ModConfig modConfig = ModConfig.get();
+    //@Unique
+    //private ModConfig modConfig = ModConfig.get();
 
     @Inject(
             method = "getItem",
@@ -31,7 +31,7 @@ public class CraftingTableSlotMixin {
     )
     private void ShowMaximumCraftableAmount(CallbackInfoReturnable<ItemStack> cir){
 
-        if (!modConfig.isModEnabled || !modConfig.isTrueAmountEnabled) return;
+        //if (!modConfig.isModEnabled || !modConfig.isTrueAmountEnabled) return;
 
         Minecraft minecraftClient = Minecraft.getInstance();
 
