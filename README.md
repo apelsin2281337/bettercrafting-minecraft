@@ -2,6 +2,8 @@
  
 A client-side Fabric mod that modifies Minecraft's crafting interface to display the maximum number of items you can craft from available inventory materials.
 
+### Unconfigurable by now because well i cant get configuration to work by now so no required dependencies for now
+
 ## What it does
  
 This mod changes how the crafting table calculates and displays output quantities:
